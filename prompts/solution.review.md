@@ -12,3 +12,9 @@ DO:
 
 RULE: This review does not replace the human review. Say so in the output.
 OUTPUT: review.md content.
+
+RUN METRICS: end review.md with a short "Run Metrics" block for the evidence
+trail: number of interview questions answered, spec requirements produced,
+open items recorded (and how many have owners), corrections applied after
+generation, and sections generated. These numbers feed the Method & Evidence
+appendix in solution.publish — measured, not claimed.

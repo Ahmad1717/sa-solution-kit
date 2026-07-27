@@ -58,6 +58,16 @@ Existing, new/updated, sample request and response with fake values.
 | Field | Usage |
 |---|---|
 
+## Low-Level Design (NEW SERVICE only — omit for pure enhancements)
+### Database Schema
+One table per entity: | Field | Type (plain words) | Meaning |
+### ER Diagram
+(placeholder — see diagrams list)
+### Event / Integration Flows
+Topics, scheduled jobs, async write-backs, third-party systems — as numbered steps.
+### API Samples
+Request/response samples with fake values; include localized (e.g. Arabic) samples where customer-facing text exists.
+
 ## Error Handling
 | Scenario | Expected Handling |
 |---|---|

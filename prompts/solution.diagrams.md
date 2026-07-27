@@ -11,3 +11,9 @@ DO:
 4. Optionally also output Mermaid code for each diagram so the engineer can preview it before drawing.
 
 OUTPUT: diagrams.md content.
+
+NEW SERVICE MODE: when the document contains a Low-Level Design section, also
+specify: an ER diagram (entities, key fields, relationships — from the Data
+Model section only, never invented), and one sequence diagram per event/async
+flow (scheduled pulls, queue-consumed triggers, async write-backs). Customer-
+facing diagrams still never show internal storage or classification details.

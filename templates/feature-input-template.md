@@ -11,6 +11,7 @@ Reminder: no source code, no secrets, no real customer data. See instructions/pr
 - Teams involved: [iOS / Android / Backend / QA / DevOps / Security]
 - Target phase: [POC / MVP / Phase 1 / Production]
 - Target environment: [DEV / TEST / STAGING / PROD]
+- Feature type: [ENHANCEMENT of existing components / NEW SERVICE / MIXED]
 
 ## 2. Business Requirement
 - What does the business want:
@@ -51,6 +52,14 @@ For each component:
 - Target fields:
 - Mapping rules (source -> target):
 - Sorting / filtering / limits:
+
+## 7b. Data Model (NEW SERVICE only — skip for pure enhancements)
+- Tables/entities (name + purpose, one line each):
+- Key fields per table (names only, no real values):
+- Relationships (A 1..n B, in plain words):
+- Configuration data (journey lists, mapping tables, feature flags):
+- Event/async flows (topics, scheduled jobs, write-backs, third parties):
+- Bilingual/localized content rules (if customer-facing text exists):
 
 ## 8. Error Handling
 For each expected error:

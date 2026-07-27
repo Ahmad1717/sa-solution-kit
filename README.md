@@ -24,7 +24,8 @@ Because it is not needed. A solution document describes intent: flows, component
 | 4 | `solution.document` | `solution-page.md` — wiki-ready final document |
 | 5 | `solution.diagrams` | `diagrams.md` — exact draw.io diagram instructions (+ Mermaid previews) |
 | 6 | `solution.jira` | `jira.md` — story, subtasks, acceptance criteria |
-| 7 | `solution.review` | `review.md` — gap/conflict/privacy check before human review |
+| 7 | `solution.review` | `review.md` — gap/conflict/privacy check + run metrics |
+| 8 | `solution.publish` | `publish.md` — publisher instruction, section mapping, hard rules, Method & Evidence appendix |
 
 ## How to use
 
@@ -48,3 +49,9 @@ AI output is a draft. **The engineer or Solution Architect reviews and owns the 
 ## System Cards — the reusable knowledge layer
 
 Instead of describing your system from zero every time (or worse, uploading code), each component gets a **System Card**: a one-page, pre-approved sheet of safe facts — its job, API shapes, field names, formats, and hard rules (`templates/system-card-template.md`). A card is written once, approved once by your lead (`instructions/how-to-approve-a-card.md`), stored in `context/system-cards/`, and reused in every future document. The AI loads the cards for the impacted components and already knows your world — safely, because every card was cleared before it was ever used.
+
+## Start from zero
+`solution.start` runs the whole flow as an interview: it asks whether the feature is an ENHANCEMENT or a NEW SERVICE, asks you questions one at a time, and carries your answers through every step. New services additionally get: data model + ER diagram, event/integration flows, and localized API samples.
+
+## Publishing and evidence
+`solution.publish` prepares the reviewed document for the company wiki: the publisher instruction ("restructured, not redesigned"), a section mapping table, hard rules on what may never change, and a one-page **Method & Evidence appendix** — the inputs used (no code, no secrets, no customer data), the run metrics, and the named human owner. Every published document carries proof of how it was made.

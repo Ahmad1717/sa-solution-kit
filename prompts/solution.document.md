@@ -12,3 +12,9 @@ DO:
 5. End with the Open Items table, every item with an owner.
 
 OUTPUT: solution-page.md content, ready to paste into the wiki.
+
+NEW SERVICE MODE: when the feature type is NEW SERVICE (or MIXED), include the
+"Low-Level Design" section from the template: database schema tables, ER
+diagram placeholder, event/integration flows, and API samples with fake values
+(bilingual samples where customer-facing text exists). For pure enhancements,
+omit that section entirely.

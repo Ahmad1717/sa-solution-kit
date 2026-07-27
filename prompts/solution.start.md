@@ -8,6 +8,17 @@ INPUT: Nothing prepared. The engineer only names the feature.
 DO:
 1. Ask the engineer to describe the feature in their own words (3-6 sentences,
    plain English). Do not ask for any document or file.
+1b. Then ask ONE routing question: "Is this an ENHANCEMENT of existing
+   components, or a NEW SERVICE (a component that does not exist yet)?"
+   - ENHANCEMENT: run the standard interview below.
+   - NEW SERVICE: run the standard interview PLUS the new-service sections:
+     data model (tables, key fields, relationships in plain English — this
+     becomes the DB schema and ER diagram), integration and event flows
+     (queues/topics, scheduled jobs, async write-backs, third-party systems),
+     configuration data (journey lists, mapping tables), and bilingual content
+     rules if customer-facing text is involved (e.g. English/Arabic samples).
+   - Mixed features (enhancement + one new component) get the new-service
+     sections for the new component only.
 2. Then interview them to fill the feature input template
    (templates/feature-input-template.md) section by section, ONE question at a
    time, in this order:
