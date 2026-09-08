@@ -4,92 +4,78 @@
 |---|---|
 | Solutioning | |
 | Internal Review | |
-| Architecture Committee Approval | |
+| Arc Committee Approval | |
 
 ## Feature Summary
-Two or three sentences: the problem, the proposed change, the customer result.
+Maximum 3 sentences: what the feature does and why. No customer-journey narrative.
 
 ## Feature Flow
-- Ticket: <link>
-- Design: <link>
+[Embed exported Figma screens here as images — do not paste a link only]
 
-### Existing Experience
-| Area | Current Behavior |
-|---|---|
+Figma (reference): <figma-url>
 
-### Proposed Experience
-| Area | Proposed Behavior |
-|---|---|
+## User Stories / Tasks
+- <Jira story link>
+- <Jira solution task link>
 
-High-level proposed flow (numbered steps).
+> Template note: convert these to Jira smart links in Confluence so status badges render. No description table.
 
 ## Scope
-### In Scope
-| Area | Scope |
-|---|---|
-### Out of Scope
-| Area | Reason |
-|---|---|
+- <short bullet, plain sentence>
 
-## Solution Design
-### Design Principles
-| Principle | Decision |
-|---|---|
-### Component Diagram
-(placeholder — see diagrams list)
-### Component Description
-| Component | Responsibility |
-|---|---|
+## Not in Scope
+Always include this section, even if it is one line.
+- <short bullet + one line of reasoning>
 
-## Existing Flow
-Steps table + sequence diagram placeholder.
-
-## Proposed Flow
-Steps table + sequence diagram placeholder.
-
-## API Contracts
-Existing, new/updated, sample request and response with fake values.
-
-## Component Changes
-| Component | Changes |
-|---|---|
-
-## Data / Metadata Mapping
-| Field | Usage |
-|---|---|
-
-## Low-Level Design (NEW SERVICE only — omit for pure enhancements)
-### Database Schema
-One table per entity: | Field | Type (plain words) | Meaning |
-### ER Diagram
-(placeholder — see diagrams list)
-### Event / Integration Flows
-Topics, scheduled jobs, async write-backs, third-party systems — as numbered steps.
-### API Samples
-Request/response samples with fake values; include localized (e.g. Arabic) samples where customer-facing text exists.
-
-## Error Handling
-| Scenario | Expected Handling |
-|---|---|
-
-## Security Considerations
-| Area | Decision |
-|---|---|
-
-## Backward Compatibility
-| Item | Behavior |
-|---|---|
-
-## Testing Strategy
-One table per impacted component: | Test Case | Expected Result |
+## Dependencies
+- <short bullet> (or "None.")
 
 ## Assumptions
-| Assumption | Details |
+- <short bullet>
+
+## Solution Design
+
+### Component Diagram
+(placeholder — exactly one diagram)
+- Draw in drawio.
+- Color legend: Red = New Development, Yellow = Update, Green = No Change.
+- Show the Digital System vs Core Bank System boundary.
+- Mark as a collapsible "click to expand" block in Confluence.
+
+### High-level Sequence Diagram
+(placeholder — one collapsible diagram per user-facing flow, no more)
+- Highlight new logic in red notes.
+
+## Component Changes
+The heart of the document. One row per service. Numbered, concrete actions inside each row, each with a placeholder for the BE Jira sub-task link.
+Backward-compatibility, error-handling, and security notes are one-line entries inside the relevant component's row — never separate sections.
+
+| Component | Required Changes |
 |---|---|
+| service-a | 1. <concrete action> (sub-task: <Jira link>). 2. <concrete action> (sub-task: <Jira link>). BC: <one line>. Errors: <one line>. Security: <one line>. |
+
+## API Contracts
+| Component | Request Endpoint | Existing or New |
+|---|---|---|
+
+Sample request/response JSON only for genuinely NEW endpoints. All values fake.
+
+## Kafka
+(Conditional section — include only when events are involved.)
+
+| Topic | Publisher | Subscriber | Existing or New |
+|---|---|---|---|
+
+## Tables
+(Conditional section — include only when DB changes exist.)
+
+**<table_name>**
+- <column_name> — <type> — NEW
+- <column_name> — <type>
 
 ## Open Items
 | Item | Owner | Status |
 |---|---|---|
 
 ## Architecture / Design Recommendation
-Short closing recommendation: chosen approach, why, and the hard rules.
+2 or 3 keyword bullets only (for example "Domain Driven", "Event Driven"). Never paragraphs.
